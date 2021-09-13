@@ -1,0 +1,110 @@
+<!-- Maquetacion Web -->
+
+<!-- Introduccion HTML -->
+
+<!DOCTYPE html> 
+<html lang="es">
+    <head> <!-- Provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos. -->
+        <meta charset="utf-8"/>  <!-- Codificacion -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title> Maquetacion Web Team Programadores </title>
+    
+      <!-- Hoja de estilo -->
+<link rel="stylesheet"  type="text/css"  href="assets/css/styles.css" /> <!-- especifica la relación entre el documento actual y un recurso externo. -->
+
+</head>
+
+<body>
+    <header id="header"> <!-- Representa la cabecera del sitio web -->
+<div class="center"> 
+
+    <!-- Logo -->
+    
+<div id= "logo"> <!-- Sirve para crear secciones o agrupar contenidos. -->
+    <img src="assets/images/React.js_logo-512.png" class="app-logo" alt="logotipo"/>
+<span id="brand"> <!-- Sirve para aplicar estilo al texto o agrupar elementos en línea. -->
+    <strong> Blog </strong> React JS <!-- Negrita -->
+</span>
+</div>
+
+<!-- Menu de navegacion -->
+
+<nav id="menu"> <!-- Representa una sección de una página cuyo propósito es proporcionar enlaces de navegación -->
+    <ul> <!-- Comando Lista -->
+        <li> <!-- El elemento li del ingles item list o elemento de lista declara cada uno de los elementos de una lista -->
+            <a href="index.html"> Inicio </a> <!-- crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. -->
+        </li>
+        <li>
+            <a href="blog.html"> Blog </a>
+        </li>
+        <li>
+            <a href="formulario.html"> Formularios </a>
+        </li>
+    </ul> 
+    </ul> 
+
+</nav> 
+
+<!-- Sliders -->
+
+<!-- Limpiar los floats -->
+
+</div class="clearfix"> </div> 
+</header>
+    <div class="center"> 
+    <section id="content">
+       <h1 class="subheader"> Formulario </h1>
+<form class="mid-form">
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre"/>
+    </div>
+    
+    <div class="form-group">
+        <label for="apellidos">Apellido</label>
+        <input type="text" name="apellidos"/>
+    </div>
+    
+    <div class="form-group">
+        <label for="detalle">Detalle</label>
+        <textarea name="detalle"></textarea>
+    </div>
+   
+    <div class="form-group radiobuttons">
+        <input type="radio" name="genero" value="hombre" /> Hombre
+        <input type="radio" name="genero" value="mujer" /> Mujer 
+        <input type="radio" name="genero" value="otro" /> Otro 
+    </div>
+    <input type="submit" value="Enviar" class="btn btn-success"/> <!-- Enviar formulario -->
+<br/>
+<div class="clearfix"></div>
+</form>
+
+    </section>
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <div id="nav-blog" class="sidebar-item"> 
+            <h3>Podes hacer esto</h3>
+            <a href="#" class="btn btn-success"> Crear articulo</a>
+</div>
+        <div id="search" class="sidebar-item"> 
+            <h3>Buscador </h3>
+            <p>Encontrá el articulo</p>
+            <form>
+                <input type="text" name="search"/>
+                <input type= "submit" name="submit" value="Buscar" class="btn"/>
+            </form>
+        </div>
+    </aside>
+    <div class="clearfix"></div>
+</div>
+
+<!-- Representa un pie de página  -->
+<footer id="footer">  
+    <div class="center">
+        <p>&copy;Blog::ReactJS</p>
+    </div>
+</footer>
+</body>
+</html>

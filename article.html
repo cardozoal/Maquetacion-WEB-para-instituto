@@ -1,0 +1,109 @@
+<!-- Maquetacion Web -->
+
+<!-- Introduccion HTML -->
+
+<!DOCTYPE html> 
+<html lang="es">
+    <head> <!-- Provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos. -->
+        <meta charset="utf-8"/>  <!-- Codificacion -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title> Maquetacion Web Team Programadores </title>
+    
+      <!-- Hoja de estilo -->
+
+    <link rel="stylesheet"  type="text/css"  href="assets/css/styles.css" /> <!-- especifica la relación entre el documento actual y un recurso externo. -->
+
+</head>
+
+<body>
+    <header id="header"> <!-- Representa la cabecera del sitio web -->
+<div class="center"> 
+
+    <!-- Logo -->
+    
+<div id= "logo"> <!-- Sirve para crear secciones o agrupar contenidos. -->
+    <img src="assets/images/React.js_logo-512.png" class="app-logo" alt="logotipo"/>
+<span id="brand"> <!-- Sirve para aplicar estilo al texto o agrupar elementos en línea. -->
+    <strong> Blog </strong> React JS <!-- Negrita -->
+</span>
+</div>
+
+<!-- Menu de navegacion -->
+
+<nav id="menu"> <!-- Representa una sección de una página cuyo propósito es proporcionar enlaces de navegación -->
+    <ul> <!-- Comando Lista -->
+        <li> <!-- El elemento li del ingles item list o elemento de lista declara cada uno de los elementos de una lista -->
+            <a href="index.html"> Inicio </a> <!-- crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. -->
+        </li>
+        <li>
+            <a href="blog.html"> Blog </a>
+        </li>
+        <li>
+            <a href="formulario.html"> Formularios </a>
+        </li>
+    </ul> 
+
+</nav> 
+
+<!-- Sliders -->
+
+<!-- Limpiar los floats -->
+
+</div class="clearfix"> </div> 
+</header>
+    
+
+<div class="center"> 
+    <section id="content"> <!--  Sirve para determinar qué contenido corresponde a qué parte de un esquema. -->
+       
+<!-- Articulos -->
+
+     <article class= "article-item article-detail"> 
+        <div class="image-wrap">
+            <img src="assets/images/3rdstrikeryustage.png" alt="Street Fighter 3rd Strike Ryu Stage">
+        </div>
+        <h1 class="subheader"> Articulo de prueba </h1>
+        <span class="date"> <!-- Aplica estilo al texto -->
+           
+            Hace 5 minutos
+         </span>
+
+            <p> Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. </p>
+            
+            <p>El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". </p> 
+            
+            <p>Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. </p> 
+            
+            <p>Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo). </p>
+        
+            <div class="clearfix"> </div> <!-- Limpia floats -->
+    </article>
+</section>
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <div id="nav-blog" class="sidebar-item"> 
+            <h3>Podes hacer esto</h3>
+            <a href="#" class="btn btn-success"> Crear articulo</a>
+</div>
+        <div id="search" class="sidebar-item"> 
+            <h3>Buscador </h3>
+            <p>Encontrá el articulo</p>
+            <form>
+                <input type="text" name="search"/>
+                <input type= "submit" name="submit" value="Buscar" class="btn"/>
+            </form>
+        </div>
+    </aside>
+    <div class="clearfix"></div>
+</div>
+
+<!-- Pie de pagina -->
+
+<footer id="footer"> 
+    <div class="center">
+        <p>&copy;Blog::ReactJS</p>
+    </div>
+</footer>
+</body>
+</html>

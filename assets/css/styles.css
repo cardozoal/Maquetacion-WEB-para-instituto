@@ -1,0 +1,432 @@
+/* Etiquetas selectoras y estilos */
+
+body {
+    text-align: center; /* Establece la alineación horizontal del contenido dentro de un elemento de bloque o un cuadro de celda de tabla. */
+    background: white; /* Es un atajo para definir los valores individuales del fondo en una única regla CSS. */
+margin: 0px; /* Establece el margen para los cuatro lados. */
+padding: 0px; /* Establece el espacio de relleno requerido por todos los lados de un elemento. El área de padding es el espacio entre el contenido del elemento y su borde  */
+} 
+
+/*  */
+
+    #header {
+    border: 1px solid black; /* Permite definir de golpe todos los bordes en una única regla de la hoja de estilos. */
+    height: 120px; /* Especifica la altura del area de contenido de un elemento. El área de contenido está dentro del padding, borde, y margen del elemento. */
+    width: 100%; /* Especifica la anchura del area de contenido de un elemento. El área de contenido está dentro del padding, borde, y margen del elemento.  */
+    background: white;
+border-bottom: 1px solid gray; /* Permite de definir de una vez todas las propiedades individuales, las cuales describen el color, estilo y ancho del borde inferior de un elementos. */
+border-top: 3px solid blue; /* Es una abreviatura que establece los valores  */
+
+/* Fuentes */
+font-family: Calibri; /*  Define una lista de fuentes o familias de fuentes, con un orden de prioridad, para utilizar en un elemento seleccionado. */
+-webkit-font-smoothing: antialiased;
+-moz-font-smooting: antialiased;
+-moz-osx-font-smoothing: antialiased;
+}
+
+/* Centro de la pagina */
+
+.center {
+width: 75%;
+margin: 0px auto;
+}
+
+/* Logo de la pagina  tamaño Blog React JS */
+
+#logo {
+    width: 30%; /* especifica la anchura del area de contenido de un elemento. */
+    font-size: 30px; /* Especifica la dimensión de la letra. Este tamaño puede, a su vez, alterar el aspecto de alguna otra cosa */
+    float: left; /* Ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los elementos de texto y en línea aparecer a su costado. */
+margin-top: 30px; /*  establece el área de ‎‎margen‎‎ en la parte superior de un elemento. */
+}
+
+/* Imagen de react */
+
+#logo img {
+    display: block; /* Establece los tipos de visualización interna y externa de un elemento. */
+    float: left; /* ubica un elemento al lado izquierdo o derecho de su contenedor */
+    height: 60px; /* Altura */
+    margin-top: -10px; /*  Establece el área de ‎‎margen‎‎ en la parte superior de un elemento. */
+animation: girar infinite 20s linear; /* Variable girar, funcion infinite a 20s en forma lineal */
+}
+
+/* Uso de keyframes para animacion 
+@keyframes girar {
+    10% {
+        height: 100px;
+    }
+    100% {
+      height: 200px;
+    }
+} */
+
+/* Atributo clave */
+
+/*  */
+@keyframes girar { /*  permite modificar el espacio de coordenadas */
+    from {
+        transform: rotate(0deg); /* permite modificar el espacio de coordenadas del modelo de formato visual CSS */
+    }
+      to {
+      transform: rotate(360deg);
+    }
+}
+
+/* Texto de Blog React JS */
+
+#brand {
+    display: block;
+    margin: 0px;
+    float: left;
+}
+
+/* Menu */
+
+#menu {
+    width: 70%;
+    float: right;
+    font-size: 18px;
+}
+
+/* Menu Lista */
+
+#menu ul {
+line-height: 80px;
+width: 60%;
+float: right;
+}
+
+/* Menu Lista acomodamiento */
+
+#menu ul li {
+    display: inline-block;
+    list-style: none;
+    height: 46px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Texto de Inicio blog y contacto */
+ 
+#menu a{
+    text-decoration: none;
+    color: blue;
+    transition: 300ms all; /* Transicion del texto */
+
+}
+
+/* Hover para tener un efecto cuando se puntualiza en inicio blog y contacto*/
+
+#menu a:hover {
+    color: black;
+    transition: 300ms all;
+}
+
+/* Slider del margen de la pagina*/
+
+#slider {
+    width: 100%;
+    background: aqua;
+    height: 350px;
+    /* line-height: 320px; */
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    background: rgb(2,0,36);
+    background: linear-gradient( 
+        90deg, rgba(2,0,36,1) 0%,
+     rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+/* Slider del h1 Letra */
+
+#slider h1 {
+    margin-top: 0.2px;
+    padding: 0px;
+    padding-top: 140px;
+    text-align: center;
+}
+
+/* Boton white */
+
+.btn-white {
+    color: rgb(128, 125, 125);
+    display: block;
+    background: white;
+    padding: 10px;
+    width: 100px;
+    height: 35px;
+    margin: 0px auto;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: none;
+    text-decoration: none;
+    line-height: 35px;
+    box-shadow: 0px 0px 5px #444;
+    margin-top: 40px important;
+    border-radius: 4px;
+    transition: 300ms all;
+}
+
+/* Hover para tener un efecto cuando se puntualiza */
+
+.btn-white:hover {
+    background-color: #444;
+    color: white;
+}
+
+/* Slider Pequeño */
+
+#slider.slider-small {
+height: 150px;
+}
+
+/* Slider de h1 small */
+
+#slider.slider-small h1 {
+    margin-top: 0.2px;
+    padding: 0px;
+    padding-top: 50px;
+}
+ 
+/* Linea Borde en Ultimos Articulos*/
+
+#content {
+    width: 70%;
+    float: left;
+    min-height: 450px;
+    margin-right: 20px;
+}
+
+/* Linea Borde en Podes hacer esto sidebar */
+
+#sidebar {
+    width: 25%;
+    float: left;
+}
+  
+/* Background de sidebar */
+
+.sidebar-item {
+    background: #f7f7f7;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* H3 de los bordes sidebar */
+
+.sidebar-item h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #ccc;
+}
+
+/*  */
+
+.sidebar-item .btn {
+    margin-top: 10px;
+    margin: 10px auto;
+}
+
+/* Boton Crear articulo */
+
+.btn {
+    display: block;
+    background: black; /* Fondo del boton */
+    color: white; /*  */
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    max-width: 120px;
+    transition: 300ms all;
+    border: none;
+    cursor: pointer;
+}
+
+/* Fondo del boton Crear articulo */
+
+.btn-success {
+    background: rgb(45, 129, 77);
+}
+
+
+/* Fondo Hover de boton Crear Articulo */
+
+.btn-success:hover {
+    background: black;
+    
+}
+
+/*  */
+
+.mid-form {
+width: 60%;
+margin: 0px auto;
+}
+
+/*  */
+
+.mid-form label {
+    display: block;
+    float: left;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+/* Selector de atributo input */
+
+
+input [type="text"],
+textarea {
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid #ccc;
+    margin-bottom: 0px;
+    padding: 3px;
+    transition: 300ms;
+}
+
+/* Radio botones */
+
+.radiobuttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+}
+ 
+/*  */
+
+input [type="text"]:focus,
+textarea:focus {
+    box-shadow: 0px 0px 2px #eee inset; /*  añade efectos de sombra alrededor del marco de un elemento. */
+}
+
+/* Textarea de Detalle */
+
+textarea {
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 300px;
+}
+
+/* Maquetando el footer, Estilos */
+
+#footer {
+    background: #f7f7f7; /* Color de fondo */
+    width: 100%; /* Ancho */
+    height: 70px; /* Altura de linea */
+    line-height: 65px; /* Altura de linea */
+    color: #444; 
+}
+
+/* Acomodamiento del texto del footer */
+
+#footer p {
+    margin: 0px; /* Margen */
+    padding: 0px; /*  */
+}
+
+/* Acomodamiento del texto del archivo Article */
+
+.article-item {
+    width: 100%; /* Ancho */
+    border-bottom: 1px solid #eee; /* Separacion de bordes */
+    padding-bottom: 20px; /* margen interior */
+    padding-top: 20px; /*  */
+    text-align: left; /* Mover el texto hacia el costado */
+}
+
+/* Espacio para la imagen */
+
+.article-item .image-wrap {
+    width: 100px; /* Ancho */
+    height: 100px; /* Alto */
+    overflow: hidden; /* oculta todo */
+    float: left; /* Ubicacion del elemento a la izquierda */
+    margin-right: 15px; /* Margen derecho */
+    border: 1px solid #ccc; /*  */
+}
+
+/* Insertando la imagen */
+
+.article-item .image-wrap img {
+    height: 100%; /*  */
+    text-align: center; /*  */
+}
+
+/* Titulo de Article */
+
+.article-item h2 {
+    display: block; /*  */
+    width: 100%; /*  */
+    padding: 0px; /*  */
+    margin: 0px; /*  */
+    margin-bottom: 7px; /*  */
+}
+
+/* Fecha o hora del articulo */
+
+.article-item .date {
+    display: block; /*  */
+    width: 100%; /*  */
+    color: rgb(128, 127, 127); /*  */
+    text-decoration: none; /*  */
+    margin-top: 10px; /*  */
+}
+
+/* Color y texto Leer más */
+
+.article-item a {
+    display: block; /* Poner letra en bloque */
+    color:  #444; 
+    text-decoration: none; 
+    margin-top: 10px; /* Top del margen */
+}
+
+/* Hover en Leer más, esto cuando centramos el mouse en el boton */
+
+.article-item a:hover{
+    text-decoration: underline; /* Subrallado en el texto leer más */
+}
+
+/* Clase de Ultimos Articulos */
+
+/* Subheader para la letra de ultimos articulos */
+
+.subheader {
+    font-size: 38px; /*  */
+    border-bottom: 1px solid #eee; /*  */
+    padding-bottom: 10px; /*  */
+}
+
+/* Extension del espacio de imagen en el articulo */
+
+.article-detail .image-wrap {
+    float: none; /*  */
+    width: 100%; /*  */
+    height: 300px; /*  */
+}
+
+/* Tamaño de imagen */
+
+.article-detail .image-wrap img {
+    width: 100%; /*  */
+    height: auto; /*  */
+}
+
+/* Acomodamiento del subheader en el articulo */
+
+.article-detail .subheader {
+    margin-bottom: 0px; /*  */
+    border: none; /*  */
+    margin-top: 10px; /*  */
+}
